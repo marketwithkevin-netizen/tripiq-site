@@ -1,0 +1,134 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TripIQ | Private beta ride analysis for drivers</title>
+  <meta name="description" content="TripIQ helps rideshare drivers judge supported ride requests with on-device hourly and per-mile analysis during private beta testing.">
+  <meta name="theme-color" content="#08111f">
+  <link rel="icon" href="assets/tripiq-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="TripIQ home">
+        <img src="assets/tripiq-icon.svg" alt="" width="34" height="34">
+        <span>TripIQ</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-links">
+        <span class="sr-only">Menu</span>
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="site-links">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Private beta</p>
+        <h1>Know whether a ride is worth it before the request disappears.</h1>
+        <p class="lede">TripIQ analyzes supported ride-request screens on your Android device, calculates hourly and per-mile value, and shows a quick GO, MAYBE, or NO GO overlay while you decide.</p>
+        <div class="hero-actions" aria-label="Primary actions">
+          <span class="button button-disabled" aria-disabled="true">Private beta in progress</span>
+          <a class="button button-secondary" href="support.html">Contact support</a>
+        </div>
+      </div>
+      <div class="hero-panel" aria-label="TripIQ result preview">
+        <div class="phone-shell">
+          <div class="phone-top"></div>
+          <div class="ride-card-mini">
+            <div class="mini-row"><span>Ride offer</span><strong>$18.42</strong></div>
+            <div class="mini-grid">
+              <div><span>Hourly</span><strong>$31.58</strong></div>
+              <div><span>Per mile</span><strong>$1.82</strong></div>
+            </div>
+            <div class="decision-pill">GO</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <div>
+        <p class="eyebrow">What it does</p>
+        <h2>Fast math for short ride-request timers.</h2>
+      </div>
+      <p>TripIQ uses user-authorized Android screen analysis to read a visible ride offer, extract fare, pickup time, pickup distance, trip time, and trip distance where available, then compare the result against your configured standards.</p>
+    </section>
+
+    <section class="section benefits" aria-labelledby="benefits-title">
+      <div class="section-heading">
+        <p class="eyebrow">Driver benefits</p>
+        <h2 id="benefits-title">Built for quick, repeat decisions.</h2>
+      </div>
+      <div class="card-grid three">
+        <article class="info-card"><h3>See value quickly</h3><p>View estimated hourly and per-mile economics without doing mental math under pressure.</p></article>
+        <article class="info-card"><h3>Use your standards</h3><p>Set GO and MAYBE thresholds for hourly rate and pay per mile inside the app.</p></article>
+        <article class="info-card"><h3>Stay in flow</h3><p>TripIQ displays a compact overlay above supported rideshare request screens while Real-Time Mode is active.</p></article>
+      </div>
+    </section>
+
+    <section class="section process" aria-labelledby="how-title">
+      <div class="section-heading">
+        <p class="eyebrow">How it works</p>
+        <h2 id="how-title">On-device capture, OCR, and decisioning.</h2>
+      </div>
+      <ol class="steps">
+        <li><span>1</span><div><h3>Start Real-Time Mode</h3><p>Android asks for screen analysis permission for the current session and display-over-other-apps permission for the overlay.</p></div></li>
+        <li><span>2</span><div><h3>Open a supported ride-request screen</h3><p>TripIQ watches for ride-card shapes and text patterns associated with currently supported request screens.</p></div></li>
+        <li><span>3</span><div><h3>Review the overlay</h3><p>The app shows estimated dollars per hour, dollars per mile, and a GO, MAYBE, or NO GO decision.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section capabilities" aria-labelledby="capabilities-title">
+      <div class="section-heading">
+        <p class="eyebrow">Current beta capabilities</p>
+        <h2 id="capabilities-title">Ride analysis for supported request screens.</h2>
+      </div>
+      <div class="feature-list">
+        <p>Supports Uber and Empower ride-request analysis in the current private beta.</p>
+        <p>Calculates estimated hourly rate and pay per mile from parsed fare, time, and mileage fields.</p>
+        <p>Provides a same-day local dashboard summary by platform and decision category.</p>
+        <p>Includes recovery handling when Android stops screen analysis or the app needs to restore Real-Time Mode.</p>
+      </div>
+    </section>
+
+    <section class="section privacy-band" aria-labelledby="privacy-title">
+      <div>
+        <p class="eyebrow">Privacy-first beta</p>
+        <h2 id="privacy-title">Designed around local processing.</h2>
+      </div>
+      <div class="privacy-points">
+        <p>TripIQ processes supported ride-request screens directly on your Android device.</p>
+        <p>The current beta does not send screenshots, OCR text, ride-request information, analytics, or diagnostic logs to TripIQ-operated servers.</p>
+        <p>TripIQ does not request precise, approximate, or background location access.</p>
+        <p>Diagnostic logs may be stored locally to help troubleshoot beta issues.</p>
+        <a class="text-link" href="privacy.html">Read the beta privacy policy</a>
+      </div>
+    </section>
+
+    <section class="section beta-note" aria-labelledby="beta-title">
+      <div>
+        <p class="eyebrow">Availability</p>
+        <h2 id="beta-title">Private beta, not public download.</h2>
+      </div>
+      <p>TripIQ is currently in private beta testing and is not yet available for public download.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>TripIQ</strong><span>Private beta 0.1.0-beta01 (100)</span></div>
+    <nav aria-label="Footer navigation"><a href="privacy.html">Privacy Policy</a><a href="support.html">Support</a><a href="mailto:support.tripiq@gmail.com">Email support</a></nav>
+    <p>&copy; 2026 TripIQ. All rights reserved.</p>
+    <p class="footer-legal">TripIQ is an independent product and is not affiliated with, endorsed by, or sponsored by Uber or Empower. All trademarks belong to their respective owners.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

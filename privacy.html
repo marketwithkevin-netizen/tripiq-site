@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | TripIQ</title>
+  <meta name="description" content="TripIQ private beta privacy policy effective August 9, 2026.">
+  <meta name="theme-color" content="#08111f">
+  <link rel="icon" href="assets/tripiq-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="TripIQ home"><img src="assets/tripiq-icon.svg" alt="" width="34" height="34"><span>TripIQ</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-links"><span class="sr-only">Menu</span><span></span><span></span><span></span></button>
+      <div class="nav-links" id="site-links"><a href="index.html">Home</a><a href="privacy.html" aria-current="page">Privacy</a><a href="support.html">Support</a></div>
+    </nav>
+  </header>
+
+  <main id="main" class="policy-main">
+    <section class="section page-hero">
+      <p class="eyebrow">Effective August 9, 2026</p>
+      <h1>TripIQ Beta Privacy Policy</h1>
+      <p class="lede">This policy explains how the current TripIQ private beta handles screen analysis, ride-request information, diagnostics, and local app data.</p>
+    </section>
+
+    <section class="section policy-content" aria-label="Privacy policy sections">
+      <h2>Purpose</h2>
+      <p>TripIQ is an Android ride-request analysis tool for rideshare drivers. It helps estimate whether a supported ride request meets your standards by calculating hourly value, per-mile value, and a GO, MAYBE, or NO GO result.</p>
+
+      <h2>Screen Capture and OCR</h2>
+      <p>When Real-Time Mode is active, TripIQ uses Android screen analysis only after you approve the Android permission prompt for that session. TripIQ reads visible screen frames so it can identify and analyze supported ride-request screens.</p>
+      <p>TripIQ performs text recognition on the device using Google ML Kit Text Recognition. TripIQ does not create or save a screen-recording video.</p>
+      <p>In the current beta, TripIQ does not upload screenshots, screen frames, OCR images, or OCR text to TripIQ-operated servers.</p>
+
+      <h2>Ride-Request Information</h2>
+      <p>TripIQ may process ride-request details visible on supported screens, including fare, pickup time, pickup distance, trip time, trip distance, platform label, other visible request text where applicable, calculated hourly value, calculated per-mile value, and the resulting GO, MAYBE, or NO GO decision.</p>
+      <p>The current beta keeps same-day dashboard aggregates locally, such as offer counts, decision counts, and value totals by platform. TripIQ does not maintain a full persistent ride history in the current beta.</p>
+
+      <h2>Location</h2>
+      <p>The current beta does not request precise location, approximate location, or background location access.</p>
+
+      <h2>Local Diagnostics</h2>
+      <p>TripIQ may store local diagnostic logs to help troubleshoot beta issues. These logs may include raw and normalized OCR text, calculated ride values, parser details, lifecycle and recovery events, app version, device model, Android version, memory details, screen-analysis status, and related troubleshooting information.</p>
+      <p>Local daily diagnostic log files are cleaned up after approximately 30 days.</p>
+      <p>TripIQ includes a diagnostic capability for OCR PNG and TXT artifacts, but that artifact saving is disabled in the current beta.</p>
+
+      <h2>Diagnostic Sharing</h2>
+      <p>The current beta does not automatically upload diagnostic logs and does not include an in-app diagnostic sharing path. If you manually send diagnostic files to support, review them first and remove or avoid sending passenger names, complete pickup or dropoff addresses, account credentials, private screenshots, or other unnecessary personal information.</p>
+
+      <h2>Preferences and Local Storage</h2>
+      <p>TripIQ stores local preferences and operating state, including onboarding completion, decision thresholds, diagnostic logging mode, Real-Time Mode recovery state, overlay position, process session identifiers, a short lifecycle event buffer, and same-day dashboard summary values.</p>
+
+      <h2>Android Backup and Device Transfer</h2>
+      <p>TripIQ stores diagnostics, ride-analysis information, preferences, and dashboard statistics locally on the device. TripIQ is configured to prevent its app data from being included in Android cloud backups or Android device-to-device transfer extraction.</p>
+
+      <h2>Third-Party Services and SDKs</h2>
+      <p>The current beta uses Google ML Kit Text Recognition for on-device OCR. The current beta does not include analytics, advertising, crash-reporting, or TripIQ telemetry SDKs.</p>
+
+      <h2>Data Retention and Deletion</h2>
+      <p>Same-day dashboard aggregates reset by date. Local diagnostic logs are cleaned up after approximately 30 days. You can also remove locally stored TripIQ data by clearing app storage or uninstalling TripIQ through Android settings.</p>
+
+      <h2>Android Permissions</h2>
+      <p>TripIQ uses display-over-other-apps permission to show the result overlay, foreground-service capability so Real-Time Mode can continue while active, and Android screen analysis permission for user-authorized screen capture during an active Real-Time Mode session.</p>
+
+      <h2>Security Limitations</h2>
+      <p>TripIQ stores beta diagnostics and app data locally on your device. Device security, screenshots taken outside TripIQ, files you manually share, and manufacturer-specific transfer behavior outside standard Android backup and extraction settings may be outside TripIQ's control.</p>
+
+      <h2>Children</h2>
+      <p>TripIQ is intended for rideshare drivers and is not directed to children.</p>
+
+      <h2>Future Changes</h2>
+      <p>TripIQ may introduce additional optional features in the future. If a new feature materially changes how information is collected or used, this policy and applicable Google Play disclosures will be updated before the feature is enabled.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about this policy can be sent to <a href="mailto:support.tripiq@gmail.com">support.tripiq@gmail.com</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>TripIQ</strong><span>Private beta 0.1.0-beta01 (100)</span></div>
+    <nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="support.html">Support</a></nav>
+    <p>&copy; 2026 TripIQ. All rights reserved.</p>
+    <p class="footer-legal">TripIQ is an independent product and is not affiliated with, endorsed by, or sponsored by Uber or Empower. All trademarks belong to their respective owners.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
