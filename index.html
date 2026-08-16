@@ -3,19 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TripIQ | Private beta ride analysis for drivers</title>
-  <meta name="description" content="TripIQ helps rideshare drivers judge supported ride requests with on-device hourly and per-mile analysis during private beta testing.">
-  <meta name="theme-color" content="#08111f">
-  <link rel="icon" href="assets/tripiq-icon.svg" type="image/svg+xml">
+  <title>DriVerdict | Real-time ride math for better driver decisions</title>
+  <meta name="description" content="DriVerdict helps rideshare drivers evaluate supported ride requests with on-device hourly and per-mile analysis.">
+  <meta name="theme-color" content="#061421">
+  <link rel="canonical" href="https://driverdict.com/">
+  <meta property="og:title" content="DriVerdict | Real-time ride math for better driver decisions">
+  <meta property="og:description" content="Fast, on-device ride analysis for better driver decisions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://driverdict.com/">
+  <meta property="og:image" content="https://driverdict.com/assets/drivervdict-icon-1024.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/drivervdict-icon-1024.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="index.html" aria-label="TripIQ home">
-        <img src="assets/tripiq-icon.svg" alt="" width="34" height="34">
-        <span>TripIQ</span>
+      <a class="brand" href="index.html" aria-label="DriVerdict home">
+        <img src="assets/drivervdict-icon-1024.png" alt="" width="38" height="38">
+        <span>DriVerdict</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-links">
         <span class="sr-only">Menu</span>
@@ -34,17 +42,20 @@
       <div class="hero-copy">
         <p class="eyebrow">Private beta</p>
         <h1>Know whether a ride is worth it before the request disappears.</h1>
-        <p class="lede">TripIQ analyzes supported ride-request screens on your Android device, calculates hourly and per-mile value, and shows a quick GO, MAYBE, or NO GO overlay while you decide.</p>
+        <p class="lede">DriVerdict analyzes supported ride-request screens on your Android device, calculates hourly and per-mile value, and shows a quick GO, MAYBE, or NO GO overlay while you decide.</p>
         <div class="hero-actions" aria-label="Primary actions">
           <span class="button button-disabled" aria-disabled="true">Private beta in progress</span>
           <a class="button button-secondary" href="support.html">Contact support</a>
         </div>
       </div>
-      <figure class="hero-panel" aria-label="TripIQ result preview">
+      <figure class="hero-panel" aria-label="DriVerdict result preview">
         <div class="phone-frame">
-          <img src="assets/tripiq-ride-analysis.webp" width="900" height="1842" alt="TripIQ displaying hourly and per-mile calculations over a rideshare request.">
+          <div class="screenshot-wrap">
+            <img src="assets/drivervdict-ride-analysis.webp" width="900" height="1842" alt="DriVerdict displaying hourly and per-mile calculations over a rideshare request.">
+            <div class="analysis-rebrand" aria-hidden="true"><strong>DriVerdict</strong><span>Ride analyzed: $16.10, 40 min, 25.2 mi, $24.15/hr, $0.64/mi, GO</span></div>
+          </div>
         </div>
-        <figcaption>TripIQ analyzing a ride request during private beta testing. Pickup information obscured for privacy.</figcaption>
+        <figcaption>DriVerdict analyzing a ride request during private beta testing. Pickup information obscured for privacy.</figcaption>
       </figure>
     </section>
 
@@ -53,7 +64,7 @@
         <p class="eyebrow">What it does</p>
         <h2>Fast math for short ride-request timers.</h2>
       </div>
-      <p>TripIQ uses user-authorized Android screen analysis to read a visible ride offer, extract fare, pickup time, pickup distance, trip time, and trip distance where available, then compare the result against your configured standards.</p>
+      <p>DriVerdict uses user-authorized Android screen analysis to read a visible ride offer, extract fare, pickup time, pickup distance, trip time, and trip distance where available, then compare the result against your configured standards.</p>
     </section>
 
     <section class="section benefits" aria-labelledby="benefits-title">
@@ -64,7 +75,7 @@
       <div class="card-grid three">
         <article class="info-card"><h3>See value quickly</h3><p>View estimated hourly and per-mile economics without doing mental math under pressure.</p></article>
         <article class="info-card"><h3>Use your standards</h3><p>Set GO and MAYBE thresholds for hourly rate and pay per mile inside the app.</p></article>
-        <article class="info-card"><h3>Stay in flow</h3><p>TripIQ displays a compact overlay above supported rideshare request screens while Real-Time Mode is active.</p></article>
+        <article class="info-card"><h3>Stay in flow</h3><p>DriVerdict displays a compact overlay above supported rideshare request screens while Real-Time Mode is active.</p></article>
       </div>
     </section>
 
@@ -75,7 +86,7 @@
       </div>
       <ol class="steps">
         <li><span>1</span><div><h3>Start Real-Time Mode</h3><p>Android asks for screen analysis permission for the current session and display-over-other-apps permission for the overlay.</p></div></li>
-        <li><span>2</span><div><h3>Open a supported ride-request screen</h3><p>TripIQ watches for ride-card shapes and text patterns associated with currently supported request screens.</p></div></li>
+        <li><span>2</span><div><h3>Open a supported ride-request screen</h3><p>DriVerdict watches for ride-card shapes and text patterns associated with currently supported request screens.</p></div></li>
         <li><span>3</span><div><h3>Review the overlay</h3><p>The app shows estimated dollars per hour, dollars per mile, and a GO, MAYBE, or NO GO decision.</p></div></li>
       </ol>
     </section>
@@ -99,9 +110,9 @@
         <h2 id="privacy-title">Designed around local processing.</h2>
       </div>
       <div class="privacy-points">
-        <p>TripIQ processes supported ride-request screens directly on your Android device.</p>
-        <p>The current beta does not send screenshots, OCR text, ride-request information, analytics, or diagnostic logs to TripIQ-operated servers.</p>
-        <p>TripIQ does not request precise, approximate, or background location access.</p>
+        <p>DriVerdict processes supported ride-request screens directly on your Android device.</p>
+        <p>The current beta does not send screenshots, OCR text, ride-request information, analytics, or diagnostic logs to DriVerdict-operated servers.</p>
+        <p>DriVerdict does not request precise, approximate, or background location access.</p>
         <p>Diagnostic logs may be stored locally to help troubleshoot beta issues.</p>
         <a class="text-link" href="privacy.html">Read the beta privacy policy</a>
       </div>
@@ -112,15 +123,15 @@
         <p class="eyebrow">Availability</p>
         <h2 id="beta-title">Private beta, not public download.</h2>
       </div>
-      <p>TripIQ is currently in private beta testing and is not yet available for public download.</p>
+      <p>DriVerdict is currently in private beta testing and is not yet available for public download.</p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div><strong>TripIQ</strong><span>Private beta 0.1.0-beta01 (100)</span></div>
+    <div><strong>DriVerdict</strong><span>Private beta 0.1.0-beta01 (100)</span></div>
     <nav aria-label="Footer navigation"><a href="privacy.html">Privacy Policy</a><a href="support.html">Support</a><a href="mailto:support.tripiq@gmail.com">Email support</a></nav>
-    <p>&copy; 2026 TripIQ. All rights reserved.</p>
-    <p class="footer-legal">TripIQ is an independent product and is not affiliated with, endorsed by, or sponsored by Uber or Empower. All trademarks belong to their respective owners.</p>
+    <p>&copy; 2026 DriVerdict. All rights reserved.</p>
+    <p class="footer-legal">DriVerdict is an independent product and is not affiliated with, endorsed by, or sponsored by Uber or Empower. All trademarks belong to their respective owners.</p>
   </footer>
   <script src="script.js"></script>
 </body>

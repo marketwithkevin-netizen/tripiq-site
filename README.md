@@ -1,8 +1,8 @@
-﻿# TripIQ Website
+﻿# DriVerdict Website
 
-Official static website repository for TripIQ, a private-beta Android ride-request analysis tool for rideshare drivers.
+Official static website repository for DriVerdict, a private-beta Android ride-request analysis tool for rideshare drivers.
 
-TripIQ helps drivers evaluate supported ride-request screens by showing estimated hourly value, estimated per-mile value, and a GO, MAYBE, or NO GO result during Real-Time Mode.
+DriVerdict helps drivers evaluate supported ride-request screens by showing estimated hourly value, estimated per-mile value, and a GO, MAYBE, or NO GO result during Real-Time Mode.
 
 ## Pages
 
@@ -34,13 +34,13 @@ http://127.0.0.1:4173/
 
 ## Deployment
 
-GitHub Pages and custom-domain configuration are handled separately. This repository does not include a `CNAME` file, deployment workflow, backend service, analytics script, or tracking dependency.
+GitHub Pages serves the site from the repository root. The committed `CNAME` points the site to `driverdict.com`. The site has no backend service, analytics script, or tracking dependency.
 
 ## Privacy Maintenance Notes
 
 When updating public copy, keep privacy statements aligned with the current Android beta behavior and Google Play disclosures. In particular, avoid describing future optional online or community features as current functionality until they are implemented, documented, and enabled with updated disclosures.
 
-Current public privacy wording states that TripIQ stores diagnostics, ride-analysis information, preferences, and dashboard statistics locally on the device, and that TripIQ is configured to prevent its app data from being included in Android cloud backups or Android device-to-device transfer extraction.
+Current public privacy wording states that DriVerdict stores diagnostics, ride-analysis information, preferences, and dashboard statistics locally on the device, and that DriVerdict is configured to prevent its app data from being included in Android cloud backups or Android device-to-device transfer extraction.
 
 ## Support
 
